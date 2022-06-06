@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find stingray_sim)/launch/wall_following_v1.launch"></include>
+  <node name="q_follow" pkg="wall_follower" type="sarsa_follow.py" output="screen"/>
+</launch>
