@@ -1,3 +1,5 @@
+Project can be found at: https://github.com/markHigger/Q_Learning/
+
 This is a ROS Melodic package for task HW2 task 2 submission
 For this assignment the A ros robot should follow a wall. In this case it is a righ-wall following robot that has a snake-like path. It must use both Q and SARSA reinforcement learning to determain the policy and exicute that policy
 Requirements:
