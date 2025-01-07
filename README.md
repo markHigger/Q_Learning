@@ -6,43 +6,43 @@ Requirements:
 	Numpy
     Pickle
 
-Contents:
-	scripts/q_trainer.py
-        This is the script that was used to determain the policy using a standard Q-table reinforcement learning. It is recomended to run this for at least 8-10hrs for best results. 
-		-Publishers:
-			/triton_lidar/vel_cmd - velocity and angular velocity control for the robot
-		-Subscribers: 
-			/scan - Has lidar data which is used to determain state
-    scripts/q_follower.py
-        This is the script that runs a predetermained policy for a robot to follow a wall. The policy used is 'Q_q.pickle'
-		-Publishers:
-			/triton_lidar/vel_cmd - velocity and angular velocity control for the robot
-		-Subscribers: 
-			/scan - Has lidar data which is used to determain state
-    scripts/sarsa_trainer.py
-        This is the script that was used to determain the policy using a standard Q-table reinforcement learning. It is recomended to run this for at least 10-12 hrs for best results. 
-		-Publishers:
-			/triton_lidar/vel_cmd - velocity and angular velocity control for the robot
-		-Subscribers: 
-			/scan - Has lidar data which is used to determain state
-    scripts/sarsa_follower.py
-        This is the script that runs a predetermained policy for a robot to follow a wall. The policy used is 'Q_sarsa.pickle'
-		-Publishers:
-			/triton_lidar/vel_cmd - velocity and angular velocity control for the robot
-		-Subscribers: 
-			/scan - Has lidar data which is used to determain state
-	scripts/naive_q_follow.py
-		Part f HW2 T1 - This python script runs a node which runs takes the lidar postion from the stringray node and determains the current stant of the robot and finds the proper action for that state using manually defined Q-values. It then piublishes this action back to the stingray robot node.
-		-Publishers:
-			/triton_lidar/vel_cmd - velocity and angular velocity control for the robot
-		-Subscribers: 
-			/scan - Has lidar data which is used to determain state
+<br/>Contents:
+	<br/> - scripts/q_trainer.py
+        <br/> This is the script that was used to determain the policy using a standard Q-table reinforcement learning. It is recomended to run this for at least 8-10hrs for best results. 
+		<br/>-Publishers:
+			<br/>/triton_lidar/vel_cmd - velocity and angular velocity control for the robot
+		<br/>-Subscribers: 
+			<br/>/scan - Has lidar data which is used to determain state
+    <br/>scripts/q_follower.py
+        <br/>This is the script that runs a predetermained policy for a robot to follow a wall. The policy used is 'Q_q.pickle'
+		<br/>-Publishers:
+			<br/>/triton_lidar/vel_cmd - velocity and angular velocity control for the robot
+		<br/>-Subscribers: 
+			<br/>/scan - Has lidar data which is used to determain state
+    <br/>scripts/sarsa_trainer.py
+       <br/> This is the script that was used to determain the policy using a standard Q-table reinforcement learning. It is recomended to run this for at least 10-12 hrs for best results. 
+		<br/>-Publishers:
+			<br/>/triton_lidar/vel_cmd - velocity and angular velocity control for the robot
+		<br/>-Subscribers: 
+			<br/>/scan - Has lidar data which is used to determain state
+    <br/>scripts/sarsa_follower.py
+        <br/>This is the script that runs a predetermained policy for a robot to follow a wall. The policy used is 'Q_sarsa.pickle'
+		<br/>-Publishers:
+			<br/>/triton_lidar/vel_cmd - velocity and angular velocity control for the robot
+		<br/>-Subscribers: 
+			<br/>/scan - Has lidar data which is used to determain state
+	<br/>scripts/naive_q_follow.py
+		<br/>Part f HW2 T1 - This python script runs a node which runs takes the lidar postion from the stringray node and determains the current stant of the robot and finds the proper action for that state using manually defined Q-values. It then piublishes this action back to the stingray robot node.
+		<br/>-Publishers:
+			<br/>/triton_lidar/vel_cmd - velocity and angular velocity control for the robot
+		<br/>-Subscribers: 
+			<br/>/scan - Has lidar data which is used to determain state
 	launch/q_follow.launch
-		Contains roslaunch file to run Stingray node, Gazebo, and the q_follower node. 
+		<br/>Contains roslaunch file to run Stingray node, Gazebo, and the q_follower node. 
     launch/sarsa_follow.launch
-		Contains roslaunch file to run Stingray node, Gazebo, and the sarsa_follower node. 
+		<br/>Contains roslaunch file to run Stingray node, Gazebo, and the sarsa_follower node. 
 
-Compilation
-	cd ~/catkin_ws
-	source ./devel/setup.bash
-	catkin_make
+<br/>Compilation
+	<br/>cd ~/catkin_ws
+	<br/>source ./devel/setup.bash
+	<br/>catkin_make
